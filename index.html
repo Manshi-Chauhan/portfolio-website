@@ -1,0 +1,822 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Portfolio of Manshi Chauhan - B.Tech CSE (AIML) Student, Python & Web Developer, AI & Tech Writer" />
+  <meta name="keywords" content="Manshi Chauhan, Portfolio, Python Developer, Web Developer, AIML, AKTU, SIH 2026, FastAPI, CustomTkinter" />
+  <meta name="author" content="Manshi Chauhan" />
+  <title>Manshi Chauhan | Developer Portfolio</title>
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>💻</text></svg>" />
+  
+  <!-- Google Fonts: Inter & JetBrains Mono -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  
+  <!-- FontAwesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="dark-theme">
+  <!-- Glowing Background Orbs -->
+  <div class="bg-glow bg-glow-1"></div>
+  <div class="bg-glow bg-glow-2"></div>
+  <div class="bg-glow bg-glow-3"></div>
+
+  <!-- Navigation Bar -->
+  <header class="navbar" id="navbar">
+    <div class="container nav-container">
+      <a href="#hero" class="brand-logo">
+        <span class="code-bracket">&lt;</span><span class="brand-name">Manshi</span><span class="code-slash">/</span><span class="code-bracket">&gt;</span>
+      </a>
+
+      <!-- Desktop Nav Links -->
+      <nav class="nav-menu" id="navMenu">
+        <ul class="nav-list">
+          <li class="nav-item"><a href="#about" class="nav-link"><i class="fa-regular fa-user"></i> About</a></li>
+          <li class="nav-item"><a href="#skills" class="nav-link"><i class="fa-solid fa-code"></i> Skills</a></li>
+          <li class="nav-item"><a href="#projects" class="nav-link"><i class="fa-solid fa-laptop-code"></i> Projects</a></li>
+          <li class="nav-item"><a href="#education" class="nav-link"><i class="fa-solid fa-graduation-cap"></i> Education</a></li>
+          <li class="nav-item"><a href="#contact" class="nav-link"><i class="fa-regular fa-envelope"></i> Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="nav-actions">
+        <a href="https://github.com/Manshi-Chauhan" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-outline" title="GitHub Profile">
+          <i class="fa-brands fa-github"></i> <span class="hide-mobile">GitHub</span>
+        </a>
+        <button class="hamburger" id="hamburgerBtn" aria-label="Toggle navigation menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- 1. Hero Section -->
+    <section class="hero-section" id="hero">
+      <div class="container hero-container">
+        <div class="hero-content">
+          <div class="badge-status">
+            <span class="status-dot"></span>
+            <span class="status-text">Available for Summer Internships & Collabs</span>
+          </div>
+
+          <h1 class="hero-title">
+            Hi, I'm <span class="gradient-text">Manshi Chauhan</span>
+          </h1>
+
+          <div class="typewriter-container">
+            <span class="typewriter-prefix">$ I am a </span>
+            <span class="typewriter-text" id="typewriter"></span>
+            <span class="typewriter-cursor">|</span>
+          </div>
+
+          <p class="hero-tagline">
+            <strong>B.Tech CSE (AIML) Student</strong> | Python & Web Developer | AI & Tech Writer
+          </p>
+
+          <p class="hero-bio">
+            Passionate about building responsive, user-centric web experiences, robust Python software solutions, and turning complex AI concepts into accessible technology.
+          </p>
+
+          <!-- Quick Links / CTA Buttons -->
+          <div class="hero-actions">
+            <a href="#contact" class="btn btn-primary" id="resumeBtn">
+              <i class="fa-solid fa-file-arrow-down"></i> Download Resume
+            </a>
+            <a href="https://github.com/Manshi-Chauhan" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">
+              <i class="fa-brands fa-github"></i> GitHub
+            </a>
+            <a href="https://www.linkedin.com/in/manshi-chauhan-673541389/" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">
+              <i class="fa-brands fa-linkedin-in"></i> LinkedIn
+            </a>
+            <a href="mailto:manshichauhan923@gmail.com" class="btn btn-secondary">
+              <i class="fa-regular fa-envelope"></i> Email
+            </a>
+          </div>
+
+          <div class="hero-stats">
+            <div class="stat-item">
+              <span class="stat-number">8.3</span>
+              <span class="stat-label">SGPA (4th Sem)</span>
+            </div>
+            <div class="stat-divider"></div>
+            <div class="stat-item">
+              <span class="stat-number">10+</span>
+              <span class="stat-label">Projects Built</span>
+            </div>
+            <div class="stat-divider"></div>
+            <div class="stat-item">
+              <span class="stat-number">SIH '26</span>
+              <span class="stat-label">Hackathon Tech</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-visual">
+          <div class="profile-card-wrapper">
+            <div class="profile-avatar-container">
+              <img src="profile.jpg?v=3" alt="Manshi Chauhan" class="profile-avatar" onerror="this.src='https://ui-avatars.com/api/?name=Manshi+Chauhan&background=0d1117&color=58a6ff&size=300&font-size=0.35&bold=true';" />
+              <div class="avatar-glow"></div>
+            </div>
+
+            <!-- Mini Terminal Code Card -->
+            <div class="terminal-card">
+              <div class="terminal-header">
+                <div class="terminal-dots">
+                  <span class="dot dot-red"></span>
+                  <span class="dot dot-yellow"></span>
+                  <span class="dot dot-green"></span>
+                </div>
+                <span class="terminal-title">manshi@dev-pc: ~</span>
+              </div>
+              <div class="terminal-body">
+                <p><span class="prompt-user">manshi@dev</span>:<span class="prompt-path">~</span>$ <span class="cmd">cat info.json</span></p>
+                <p class="json-code">
+                  {<br />
+                  &nbsp;&nbsp;<span class="json-key">"degree"</span>: <span class="json-str">"B.Tech CSE (AIML)"</span>,<br />
+                  &nbsp;&nbsp;<span class="json-key">"university"</span>: <span class="json-str">"AKTU / KGI"</span>,<br />
+                  &nbsp;&nbsp;<span class="json-key">"batch"</span>: <span class="json-str">"2024 - 2028"</span>,<br />
+                  &nbsp;&nbsp;<span class="json-key">"focus"</span>: [<span class="json-str">"Python"</span>, <span class="json-str">"Web Dev"</span>, <span class="json-str">"AI/ML"</span>]<br />
+                  }
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 2. About Me Section -->
+    <section class="section about-section" id="about">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-badge"><i class="fa-regular fa-id-badge"></i> Introduction</span>
+          <h2 class="section-title">About Me</h2>
+          <p class="section-subtitle">Bridging theoretical computer science with practical software engineering.</p>
+        </div>
+
+        <div class="about-grid">
+          <div class="about-card main-bio-card">
+            <div class="card-glow-border"></div>
+            <div class="bio-terminal-bar">
+              <span class="terminal-prompt-label"><i class="fa-solid fa-terminal"></i> $ whoami --full</span>
+            </div>
+            
+            <div class="bio-content">
+              <h3>Passionate Developer & Lifelong Learner</h3>
+              <p>
+                I am a dedicated Computer Science undergraduate specializing in <strong>Artificial Intelligence & Machine Learning (AIML)</strong> at <strong>Krishna Group of Institutions, AKTU</strong> (Batch 2024–2028), maintaining an academic standing with an <strong>SGPA of 8.3 / 10</strong>.
+              </p>
+              <p>
+                My journey centers around <strong>building robust Python solutions</strong>, responsive modern web applications, and leveraging AI/ML tools. Having interned as a <strong>Python Developer Intern at upSkill (2026)</strong> and participated in the prestigious <strong>Smart India Hackathon (SIH 2026)</strong>, I prioritize clean code architecture, modular design, and real-world impact.
+              </p>
+              <p>
+                Beyond writing software, I have a deep passion for <strong>technical writing</strong> and prompt engineering—distilling intricate AI and machine learning architectures into intuitive, developer-friendly documentation.
+              </p>
+
+              <div class="about-highlights-grid">
+                <div class="highlight-box">
+                  <div class="highlight-icon"><i class="fa-solid fa-graduation-cap"></i></div>
+                  <div>
+                    <h4>Education</h4>
+                    <p>B.Tech CSE (AIML) • AKTU (2024–2028)</p>
+                  </div>
+                </div>
+                <div class="highlight-box">
+                  <div class="highlight-icon"><i class="fa-solid fa-chart-line"></i></div>
+                  <div>
+                    <h4>Academic Track</h4>
+                    <p>SGPA 8.3 / 10 | Class XII: 83%</p>
+                  </div>
+                </div>
+                <div class="highlight-box">
+                  <div class="highlight-icon"><i class="fa-solid fa-briefcase"></i></div>
+                  <div>
+                    <h4>Experience</h4>
+                    <p>Python Developer Intern @ upSkill (2026)</p>
+                  </div>
+                </div>
+                <div class="highlight-box">
+                  <div class="highlight-icon"><i class="fa-solid fa-trophy"></i></div>
+                  <div>
+                    <h4>Hackathon</h4>
+                    <p>SIH 2026 Participant (Legal Metrology)</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Quick Info & What I Do -->
+          <div class="about-side-column">
+            <div class="about-card feature-box">
+              <div class="card-glow-border"></div>
+              <div class="feature-icon"><i class="fa-brands fa-python"></i></div>
+              <div class="feature-text">
+                <h4>Full-Cycle Python Engineering</h4>
+                <p>From CustomTkinter GUI applications and cryptographic utilities to automated parsing engines and REST APIs with FastAPI.</p>
+              </div>
+            </div>
+
+            <div class="about-card feature-box">
+              <div class="card-glow-border"></div>
+              <div class="feature-icon"><i class="fa-solid fa-globe"></i></div>
+              <div class="feature-text">
+                <h4>Modern Web Development</h4>
+                <p>Creating responsive, dynamic user interfaces adhering to semantic HTML5, modern CSS3 styling, and clean JavaScript logic.</p>
+              </div>
+            </div>
+
+            <div class="about-card feature-box">
+              <div class="card-glow-border"></div>
+              <div class="feature-icon"><i class="fa-solid fa-brain"></i></div>
+              <div class="feature-text">
+                <h4>AI, LLMs & Tech Writing</h4>
+                <p>Certified in OpenAI LLM customization and prompt engineering, translating complex deep learning concepts into clean tech articles.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3. Technical Skills Section -->
+    <section class="section skills-section" id="skills">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-badge"><i class="fa-solid fa-layer-group"></i> Capabilities</span>
+          <h2 class="section-title">Technical Skills</h2>
+          <p class="section-subtitle">A categorized overview of programming languages, frameworks, and tools in my toolkit.</p>
+        </div>
+
+        <div class="skills-grid">
+          <!-- Category 1: Languages -->
+          <div class="skill-category-card">
+            <div class="category-header">
+              <div class="cat-icon cat-languages"><i class="fa-solid fa-code"></i></div>
+              <div class="cat-info">
+                <h3>Languages</h3>
+                <span class="cat-count">5 Core Languages</span>
+              </div>
+            </div>
+            <div class="skills-badges-wrapper">
+              <div class="skill-badge" data-tooltip="Primary backend & scripting language">
+                <i class="fa-brands fa-python skill-icon python-color"></i>
+                <span class="skill-name">Python</span>
+                <span class="skill-level">Proficient</span>
+              </div>
+              <div class="skill-badge" data-tooltip="OOP & Data Structures">
+                <i class="fa-brands fa-java skill-icon java-color"></i>
+                <span class="skill-name">Java</span>
+                <span class="skill-level">Academic</span>
+              </div>
+              <div class="skill-badge" data-tooltip="Foundational low-level systems">
+                <i class="fa-solid fa-c skill-icon c-color"></i>
+                <span class="skill-name">C</span>
+                <span class="skill-level">Certified</span>
+              </div>
+              <div class="skill-badge" data-tooltip="Object-oriented programming & DSA">
+                <i class="fa-solid fa-microchip skill-icon cpp-color"></i>
+                <span class="skill-name">C++</span>
+                <span class="skill-level">DSA</span>
+              </div>
+              <div class="skill-badge" data-tooltip="Relational database queries">
+                <i class="fa-solid fa-database skill-icon sql-color"></i>
+                <span class="skill-name">SQL</span>
+                <span class="skill-level">Intermediate</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Category 2: Web Development -->
+          <div class="skill-category-card">
+            <div class="category-header">
+              <div class="cat-icon cat-web"><i class="fa-solid fa-globe"></i></div>
+              <div class="cat-info">
+                <h3>Web Development</h3>
+                <span class="cat-count">5 Frameworks & Standards</span>
+              </div>
+            </div>
+            <div class="skills-badges-wrapper">
+              <div class="skill-badge" data-tooltip="Semantic and accessible markup">
+                <i class="fa-brands fa-html5 skill-icon html-color"></i>
+                <span class="skill-name">HTML5</span>
+                <span class="skill-level">Advanced</span>
+              </div>
+              <div class="skill-badge" data-tooltip="Modern CSS, Flexbox, Grid, Animations">
+                <i class="fa-brands fa-css3-alt skill-icon css-color"></i>
+                <span class="skill-name">CSS3</span>
+                <span class="skill-level">Advanced</span>
+              </div>
+              <div class="skill-badge" data-tooltip="Interactive DOM manipulation & ES6+">
+                <i class="fa-brands fa-js skill-icon js-color"></i>
+                <span class="skill-name">JavaScript</span>
+                <span class="skill-level">Intermediate</span>
+              </div>
+              <div class="skill-badge" data-tooltip="High-performance asynchronous Python REST APIs">
+                <i class="fa-solid fa-bolt skill-icon fastapi-color"></i>
+                <span class="skill-name">FastAPI</span>
+                <span class="skill-level">Backend</span>
+              </div>
+              <div class="skill-badge" data-tooltip="Python Desktop GUI & CustomTkinter">
+                <i class="fa-solid fa-window-maximize skill-icon tkinter-color"></i>
+                <span class="skill-name">Tkinter</span>
+                <span class="skill-level">GUI Dev</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Category 3: Databases & Tools -->
+          <div class="skill-category-card">
+            <div class="category-header">
+              <div class="cat-icon cat-tools"><i class="fa-solid fa-screwdriver-wrench"></i></div>
+              <div class="cat-info">
+                <h3>Databases & Tools</h3>
+                <span class="cat-count">5 Essential Tools</span>
+              </div>
+            </div>
+            <div class="skills-badges-wrapper">
+              <div class="skill-badge" data-tooltip="Relational database management">
+                <i class="fa-solid fa-server skill-icon mysql-color"></i>
+                <span class="skill-name">MySQL</span>
+                <span class="skill-level">Intermediate</span>
+              </div>
+              <div class="skill-badge" data-tooltip="Lightweight embedded relational database">
+                <i class="fa-solid fa-box-archive skill-icon sqlite-color"></i>
+                <span class="skill-name">SQLite</span>
+                <span class="skill-level">Applied</span>
+              </div>
+              <div class="skill-badge" data-tooltip="Version control and branch management">
+                <i class="fa-brands fa-git-alt skill-icon git-color"></i>
+                <span class="skill-name">Git</span>
+                <span class="skill-level">Workflow</span>
+              </div>
+              <div class="skill-badge" data-tooltip="Collaborative development & open source">
+                <i class="fa-brands fa-github skill-icon github-color"></i>
+                <span class="skill-name">GitHub</span>
+                <span class="skill-level">Active</span>
+              </div>
+              <div class="skill-badge" data-tooltip="Primary IDE with debugging tools">
+                <i class="fa-solid fa-laptop-code skill-icon vscode-color"></i>
+                <span class="skill-name">VS Code</span>
+                <span class="skill-level">Primary IDE</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Category 4: Data & AI (Bonus from Background) -->
+          <div class="skill-category-card">
+            <div class="category-header">
+              <div class="cat-icon cat-ai"><i class="fa-solid fa-brain"></i></div>
+              <div class="cat-info">
+                <h3>AI & Data Analytics</h3>
+                <span class="cat-count">Data & LLM Technologies</span>
+              </div>
+            </div>
+            <div class="skills-badges-wrapper">
+              <div class="skill-badge" data-tooltip="Prompt patterns, system instructions, AI agents">
+                <i class="fa-solid fa-robot skill-icon ai-color"></i>
+                <span class="skill-name">Prompt Eng.</span>
+                <span class="skill-level">Certified</span>
+              </div>
+              <div class="skill-badge" data-tooltip="Customized LLM Architectures with OpenAI">
+                <i class="fa-solid fa-network-wired skill-icon ai-color"></i>
+                <span class="skill-name">LLMs</span>
+                <span class="skill-level">Columbia Cert.</span>
+              </div>
+              <div class="skill-badge" data-tooltip="Data manipulation and exploratory analysis">
+                <i class="fa-solid fa-table skill-icon pandas-color"></i>
+                <span class="skill-name">Pandas</span>
+                <span class="skill-level">Data Workflows</span>
+              </div>
+              <div class="skill-badge" data-tooltip="Numerical computing">
+                <i class="fa-solid fa-calculator skill-icon numpy-color"></i>
+                <span class="skill-name">NumPy</span>
+                <span class="skill-level">Data Science</span>
+              </div>
+              <div class="skill-badge" data-tooltip="Interactive pivot tables and data dashboards">
+                <i class="fa-solid fa-file-excel skill-icon excel-color"></i>
+                <span class="skill-name">MS Excel</span>
+                <span class="skill-level">Analytics</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 4. Featured Projects Section -->
+    <section class="section projects-section" id="projects">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-badge"><i class="fa-solid fa-diagram-project"></i> Portfolio</span>
+          <h2 class="section-title">Featured Projects</h2>
+          <p class="section-subtitle">Real-world applications showcasing Python software architecture, web development, and data analytics.</p>
+        </div>
+
+        <!-- Filter Buttons -->
+        <div class="project-filters">
+          <button class="filter-btn active" data-filter="all">All Projects</button>
+          <button class="filter-btn" data-filter="python">Python & GUI</button>
+          <button class="filter-btn" data-filter="web">Web & APIs</button>
+          <button class="filter-btn" data-filter="data">Data Analytics</button>
+        </div>
+
+        <div class="projects-grid">
+          <!-- Project 1: Student Quiz Game -->
+          <div class="project-card" data-category="python">
+            <div class="project-header">
+              <div class="project-folder-icon"><i class="fa-regular fa-folder-open"></i></div>
+              <div class="project-links">
+                <a href="https://github.com/Manshi-Chauhan/upskill_project" target="_blank" rel="noopener noreferrer" class="icon-link" title="View Source on GitHub">
+                  <i class="fa-brands fa-github"></i>
+                </a>
+              </div>
+            </div>
+
+            <div class="project-meta-top">
+              <span class="project-tag-badge badge-accent">Featured Project</span>
+              <span class="project-tag-badge">Desktop App</span>
+            </div>
+
+            <h3 class="project-title">Student Quiz Game</h3>
+            <p class="project-desc">
+              Interactive desktop quiz application featuring robust student authentication, dynamic score tracking, credit calculations, and sequential progressive level unlocking. Built with an intuitive graphical interface and relational persistence.
+            </p>
+
+            <div class="project-tech-tags">
+              <span class="tech-tag">Python</span>
+              <span class="tech-tag">CustomTkinter</span>
+              <span class="tech-tag">Tkinter</span>
+              <span class="tech-tag">MySQL</span>
+              <span class="tech-tag">Pandas</span>
+            </div>
+
+            <div class="project-footer">
+              <a href="https://github.com/Manshi-Chauhan/upskill_project" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-project">
+                <span>View on GitHub</span> <i class="fa-solid fa-arrow-up-right-from-square"></i>
+              </a>
+            </div>
+          </div>
+
+          <!-- Project 2: Legal Metrology Workbench for NAWI (SIH 2026) -->
+          <div class="project-card" data-category="python web">
+            <div class="project-header">
+              <div class="project-folder-icon"><i class="fa-regular fa-folder-open"></i></div>
+              <div class="project-links">
+                <a href="https://github.com/Manshi-Chauhan/OIML-NAWI-METROLOGY-TESTER-R-76" target="_blank" rel="noopener noreferrer" class="icon-link" title="View Source on GitHub">
+                  <i class="fa-brands fa-github"></i>
+                </a>
+              </div>
+            </div>
+
+            <div class="project-meta-top">
+              <span class="project-tag-badge badge-sih"><i class="fa-solid fa-award"></i> SIH 2026 National</span>
+              <span class="project-tag-badge">Backend / FastAPI</span>
+            </div>
+
+            <h3 class="project-title">Legal Metrology Workbench for NAWI</h3>
+            <p class="project-desc">
+              Software solution engineered for the <strong>Smart India Hackathon 2026</strong> generating standardized <strong>OIML R-76 test reports</strong> for Non-Automatic Weighing Instruments. Automates measurement validation, XML schema mapping, and cryptographic PDF/A-3 generation.
+            </p>
+
+            <div class="project-tech-tags">
+              <span class="tech-tag">Python</span>
+              <span class="tech-tag">FastAPI</span>
+              <span class="tech-tag">SQLite</span>
+              <span class="tech-tag">Pydantic</span>
+              <span class="tech-tag">PDF/A-3</span>
+              <span class="tech-tag">XML</span>
+            </div>
+
+            <div class="project-footer">
+              <a href="https://github.com/Manshi-Chauhan/OIML-NAWI-METROLOGY-TESTER-R-76" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-project">
+                <span>View on GitHub</span> <i class="fa-solid fa-arrow-up-right-from-square"></i>
+              </a>
+            </div>
+          </div>
+
+          <!-- Project 3: Road Accident Analysis Dashboard -->
+          <div class="project-card" data-category="data">
+            <div class="project-header">
+              <div class="project-folder-icon"><i class="fa-regular fa-folder-open"></i></div>
+              <div class="project-links">
+                <a href="https://github.com/Manshi-Chauhan/Road_accident_analyzer" target="_blank" rel="noopener noreferrer" class="icon-link" title="View Source on GitHub">
+                  <i class="fa-brands fa-github"></i>
+                </a>
+              </div>
+            </div>
+
+            <div class="project-meta-top">
+              <span class="project-tag-badge badge-green">Analytics</span>
+              <span class="project-tag-badge">Data Visualization</span>
+            </div>
+
+            <h3 class="project-title">Road Accident Analysis Dashboard</h3>
+            <p class="project-desc">
+              Comprehensive data analytics dashboard uncovering critical traffic accident patterns across variable weather conditions, road types, casualty severity, and temporal timelines to aid road safety decision-making.
+            </p>
+
+            <div class="project-tech-tags">
+              <span class="tech-tag">Microsoft Excel</span>
+              <span class="tech-tag">Data Analytics</span>
+              <span class="tech-tag">Data Cleaning</span>
+              <span class="tech-tag">Visualization</span>
+            </div>
+
+            <div class="project-footer">
+              <a href="https://github.com/Manshi-Chauhan/Road_accident_analyzer" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-project">
+                <span>View on GitHub</span> <i class="fa-solid fa-arrow-up-right-from-square"></i>
+              </a>
+            </div>
+          </div>
+
+          <!-- Project 4: Python Encryption & Decryption Tool -->
+          <div class="project-card" data-category="python">
+            <div class="project-header">
+              <div class="project-folder-icon"><i class="fa-regular fa-folder-open"></i></div>
+              <div class="project-links">
+                <a href="https://github.com/Manshi-Chauhan/Encryption-and-Decryption-Tool" target="_blank" rel="noopener noreferrer" class="icon-link" title="View Source on GitHub">
+                  <i class="fa-brands fa-github"></i>
+                </a>
+              </div>
+            </div>
+
+            <div class="project-meta-top">
+              <span class="project-tag-badge">Security</span>
+              <span class="project-tag-badge">Cryptography</span>
+            </div>
+
+            <h3 class="project-title">Encryption & Decryption Tool</h3>
+            <p class="project-desc">
+              Desktop security application implementing symmetric cryptography (AES-128 via Fernet) for encrypting and decrypting sensitive text and files, complete with automated cryptographic key generation and an accessible GUI.
+            </p>
+
+            <div class="project-tech-tags">
+              <span class="tech-tag">Python</span>
+              <span class="tech-tag">Fernet</span>
+              <span class="tech-tag">Tkinter</span>
+              <span class="tech-tag">Cryptography</span>
+            </div>
+
+            <div class="project-footer">
+              <a href="https://github.com/Manshi-Chauhan/Encryption-and-Decryption-Tool" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-project">
+                <span>View on GitHub</span> <i class="fa-solid fa-arrow-up-right-from-square"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- More Repositories Banner -->
+        <div class="more-repos-card">
+          <div class="more-repos-content">
+            <i class="fa-brands fa-github-alt more-icon"></i>
+            <div>
+              <h4>Looking for more projects?</h4>
+              <p>Explore additional repositories including Web Scrapers, Python Turtle Art Generators, Password Managers, and Currency Converters on GitHub.</p>
+            </div>
+          </div>
+          <a href="https://github.com/Manshi-Chauhan?tab=repositories" target="_blank" rel="noopener noreferrer" class="btn btn-outline">
+            Browse All Repositories <i class="fa-solid fa-arrow-right"></i>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- 5. Certifications & Education Section -->
+    <section class="section education-section" id="education">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-badge"><i class="fa-solid fa-certificate"></i> Credentials</span>
+          <h2 class="section-title">Certifications & Education</h2>
+          <p class="section-subtitle">Academic foundations paired with industry certifications and continuous learning.</p>
+        </div>
+
+        <div class="edu-cert-grid">
+          <!-- Column 1: Academic Education -->
+          <div class="edu-column">
+            <h3 class="column-title"><i class="fa-solid fa-graduation-cap"></i> Academic Journey</h3>
+
+            <div class="timeline">
+              <!-- Item 1: B.Tech -->
+              <div class="timeline-item">
+                <div class="timeline-marker"></div>
+                <div class="timeline-card">
+                  <div class="card-glow-border"></div>
+                  <div class="timeline-period">2024 — 2028 &nbsp;•&nbsp; Currently 4th Semester</div>
+                  <h4 class="timeline-title">B.Tech in Computer Science & Engineering (AIML)</h4>
+                  <div class="timeline-institution">
+                    <i class="fa-solid fa-building-columns"></i> Krishna Group of Institutions, AKTU
+                  </div>
+                  <div class="timeline-score-badge">
+                    <i class="fa-solid fa-star"></i> Academic Standing: <strong>SGPA 8.3 / 10</strong>
+                  </div>
+                  <p class="timeline-desc">
+                    Specializing in Artificial Intelligence and Machine Learning. Rigorous coursework covering Data Structures & Algorithms, Object-Oriented Programming, Database Management Systems, Operating Systems, and Deep Learning principles.
+                  </p>
+                </div>
+              </div>
+
+              <!-- Item 2: Class XII -->
+              <div class="timeline-item">
+                <div class="timeline-marker"></div>
+                <div class="timeline-card">
+                  <div class="card-glow-border"></div>
+                  <div class="timeline-period">2023 — 2024</div>
+                  <h4 class="timeline-title">Senior Secondary Education (Class XII)</h4>
+                  <div class="timeline-institution">
+                    <i class="fa-solid fa-school"></i> SVM Inter College, Unnao (UP Board)
+                  </div>
+                  <div class="timeline-score-badge">
+                    <i class="fa-solid fa-percent"></i> Academic Score: <strong>83%</strong>
+                  </div>
+                  <p class="timeline-desc">
+                    Focused on Physics, Chemistry, and Mathematics with core foundation in analytical and logical reasoning.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Column 2: Certifications -->
+          <div class="cert-column">
+            <h3 class="column-title"><i class="fa-solid fa-award"></i> Professional Certifications</h3>
+
+            <div class="cert-list">
+              <!-- Cert 1: Columbia -->
+              <div class="cert-card">
+                <div class="card-glow-border"></div>
+                <div class="cert-icon columbia-icon"><i class="fa-solid fa-brain"></i></div>
+                <div class="cert-details">
+                  <div class="cert-tag">Columbia University</div>
+                  <h4 class="cert-name">Building Customized LLMs with OpenAI</h4>
+                  <p class="cert-issuer">Columbia University &nbsp;•&nbsp; <span class="cert-year">2026</span></p>
+                  <p class="cert-desc">In-depth specialization on architecting custom Large Language Models, prompt strategies, API orchestration, and fine-tuning pipelines.</p>
+                </div>
+              </div>
+
+              <!-- Cert 2: IBM SkillsBuild -->
+              <div class="cert-card">
+                <div class="card-glow-border"></div>
+                <div class="cert-icon ibm-icon"><i class="fa-solid fa-network-wired"></i></div>
+                <div class="cert-details">
+                  <div class="cert-tag">IBM SkillsBuild</div>
+                  <h4 class="cert-name">Exploring Artificial Intelligence</h4>
+                  <p class="cert-issuer">IBM SkillsBuild &nbsp;•&nbsp; <span class="cert-year">2026</span></p>
+                  <p class="cert-desc">Foundational and applied principles of artificial intelligence, machine learning models, and cognitive systems.</p>
+                </div>
+              </div>
+
+              <!-- Cert 3: upSkill Prompt Engineering -->
+              <div class="cert-card">
+                <div class="card-glow-border"></div>
+                <div class="cert-icon upskill-icon"><i class="fa-solid fa-robot"></i></div>
+                <div class="cert-details">
+                  <div class="cert-tag">upSkill Certification</div>
+                  <h4 class="cert-name">Prompt Engineering & AI Agents</h4>
+                  <p class="cert-issuer">upSkill &nbsp;•&nbsp; <span class="cert-year">2026</span></p>
+                  <p class="cert-desc">Advanced techniques for prompt synthesis, multi-step chain-of-thought workflows, and autonomous agent orchestration.</p>
+                </div>
+              </div>
+
+              <!-- Cert 4: C Programming -->
+              <div class="cert-card">
+                <div class="card-glow-border"></div>
+                <div class="cert-icon dev-icon"><i class="fa-solid fa-code"></i></div>
+                <div class="cert-details">
+                  <div class="cert-tag">Ritusha Consultants</div>
+                  <h4 class="cert-name">C Programming Specialization</h4>
+                  <p class="cert-issuer">Ritusha Consultants Pvt. Ltd. &nbsp;•&nbsp; <span class="cert-year">2024</span></p>
+                  <p class="cert-desc">Comprehensive certification covering pointers, memory allocation, low-level data structures, and algorithmic implementation.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 6. Contact & Footer Section -->
+    <section class="section contact-section" id="contact">
+      <div class="container">
+        <div class="contact-box">
+          <div class="card-glow-border"></div>
+          <div class="contact-header">
+            <span class="section-badge"><i class="fa-regular fa-paper-plane"></i> Get In Touch</span>
+            <h2 class="contact-title">Let's Connect & Collaborate</h2>
+            <p class="contact-subtitle">
+              I'm actively seeking <strong>Summer Internships</strong>, open-source collaborations, and exciting development opportunities. Whether you have an opportunity or just want to say hello, my inbox is always open!
+            </p>
+          </div>
+
+          <div class="contact-methods">
+            <!-- Email Box -->
+            <div class="contact-card">
+              <div class="contact-card-icon"><i class="fa-regular fa-envelope"></i></div>
+              <div class="contact-card-info">
+                <span class="contact-method-label">Direct Email</span>
+                <a href="mailto:manshichauhan923@gmail.com" class="contact-link" id="emailLink">manshichauhan923@gmail.com</a>
+              </div>
+              <button class="copy-btn" id="copyEmailBtn" aria-label="Copy email address" title="Copy to clipboard">
+                <i class="fa-regular fa-copy"></i>
+              </button>
+            </div>
+
+            <!-- LinkedIn Box -->
+            <div class="contact-card">
+              <div class="contact-card-icon"><i class="fa-brands fa-linkedin-in"></i></div>
+              <div class="contact-card-info">
+                <span class="contact-method-label">LinkedIn Profile</span>
+                <a href="https://www.linkedin.com/in/manshi-chauhan-673541389/" target="_blank" rel="noopener noreferrer" class="contact-link">
+                  manshi-chauhan-673541389
+                </a>
+              </div>
+              <a href="https://www.linkedin.com/in/manshi-chauhan-673541389/" target="_blank" rel="noopener noreferrer" class="copy-btn" title="Open LinkedIn">
+                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+              </a>
+            </div>
+
+            <!-- GitHub Box -->
+            <div class="contact-card">
+              <div class="contact-card-icon"><i class="fa-brands fa-github"></i></div>
+              <div class="contact-card-info">
+                <span class="contact-method-label">GitHub Repositories</span>
+                <a href="https://github.com/Manshi-Chauhan" target="_blank" rel="noopener noreferrer" class="contact-link">
+                  github.com/Manshi-Chauhan
+                </a>
+              </div>
+              <a href="https://github.com/Manshi-Chauhan" target="_blank" rel="noopener noreferrer" class="copy-btn" title="Open GitHub">
+                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+              </a>
+            </div>
+          </div>
+
+          <!-- Quick Action Buttons -->
+          <div class="contact-cta-wrapper">
+            <a href="mailto:manshichauhan923@gmail.com" class="btn btn-primary btn-lg">
+              <i class="fa-solid fa-paper-plane"></i> Send Direct Message
+            </a>
+            <a href="https://www.linkedin.com/in/manshi-chauhan-673541389/" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-lg">
+              <i class="fa-brands fa-linkedin"></i> Connect on LinkedIn
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Clean Footer -->
+  <footer class="footer">
+    <div class="container footer-container">
+      <div class="footer-left">
+        <a href="#hero" class="brand-logo footer-logo">
+          <span class="code-bracket">&lt;</span><span class="brand-name">Manshi</span><span class="code-slash">/</span><span class="code-bracket">&gt;</span>
+        </a>
+        <p class="footer-tag">B.Tech CSE (AIML) Student • Developer • Tech Writer</p>
+      </div>
+
+      <div class="footer-socials">
+        <a href="https://github.com/Manshi-Chauhan" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="GitHub">
+          <i class="fa-brands fa-github"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/manshi-chauhan-673541389/" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="LinkedIn">
+          <i class="fa-brands fa-linkedin-in"></i>
+        </a>
+        <a href="mailto:manshichauhan923@gmail.com" class="social-icon" aria-label="Email">
+          <i class="fa-regular fa-envelope"></i>
+        </a>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="container footer-bottom-container">
+        <p>© 2026 Manshi Chauhan. All rights reserved.</p>
+        <p class="footer-subtext">Engineered with modern HTML5, CSS3 & JavaScript • GitHub Dark UI Aesthetic</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scroll to Top Button -->
+  <button class="back-to-top" id="backToTopBtn" aria-label="Back to top">
+    <i class="fa-solid fa-chevron-up"></i>
+  </button>
+
+  <!-- Toast Notification -->
+  <div class="toast" id="toast">
+    <i class="fa-solid fa-check-circle"></i>
+    <span id="toastMsg">Email copied to clipboard!</span>
+  </div>
+
+  <!-- Custom JavaScript -->
+  <script src="script.js"></script>
+</body>
+</html>
